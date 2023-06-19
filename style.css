@@ -8,8 +8,144 @@
 
 :root {
   font-size: 62.5%;
+
+  --nav-color: #1f1534;
+  --span-color: #89c5cc;
+  --paragrapf-color: #7d7987;
+  --button-color: #69b99d;
+  --button-color-hover: #4aa183;
 }
 
 body {
   font-size: 1.6rem;
+
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 1) 100%
+  );
+
+  min-height: 100vh;
+}
+
+body * {
+  font-family: "Mulish", sans-serif;
+}
+
+.page {
+  width: 100rem;
+  margin: 0rem auto 3rem;
+  padding-top: 6.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 4.8rem;
+}
+
+nav ul li a {
+  color: var(--nav-color);
+  opacity: 0.5;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+
+  transition: font-weight, opacity 0.2s;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5.8rem 0rem 8rem;
+}
+
+main section {
+  width: 49rem;
+}
+
+main section h1 {
+  font-weight: 400;
+  font-size: 4.9rem;
+  line-height: 5.6rem;
+  color: var(--nav-color);
+}
+
+main section h1 span {
+  font-weight: 700;
+  color: var(--span-color);
+}
+
+main section p {
+  width: 43.8rem;
+  margin: 4rem 0rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: var(--paragrapf-color);
+}
+
+main section button {
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1.4rem 3.2rem 1.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  color: white;
+  font-size: 1.6rem;
+
+  transition: background-color 0.2s;
+}
+
+main section button:hover {
+  background-color: var(--button-color-hover);
+}
+
+footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: var(--nav-color);
+
+  text-align: center;
+}
+
+footer a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: var(--nav-color);
+
+  opacity: 0.5;
+  text-decoration: none;
+
+  transition: opacity 0.2s;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+.balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
